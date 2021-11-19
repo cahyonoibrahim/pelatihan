@@ -1,0 +1,33 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        
+
+        {% if data.skala == 200  %}
+        <h1>Pendaftaran User {{data.kabar}}</h1>
+       
+        <br>
+        <form action="" method="post">
+            <fieldset>
+                <label for="username">Username</label>
+                <input type="text" name="username" placeholder="username">
+            </fieldset>
+            <fieldset>
+                <label for="email"> Email</label>
+                <input type="email" name="email" placeholder="xyz@gmail.com">
+            </fieldset>
+            <fieldset>
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="password">
+            </fieldset>
+            <button type="submit">Register</button>
+        </form>
+        {% else %}
+            <h1>{{data.kabar}}</h1><br>
+        <h5>Silahkan langkah selanjutnya </h5>
+        {% endif %}
+
+    </body>
+</html>
